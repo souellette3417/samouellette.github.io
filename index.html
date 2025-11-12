@@ -1,17 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sam Ouellette – Data Portfolio</title>
-</head>
-<body>
-    <h1>Sam Ouellette – Data Science Portfolio</h1>
-    <p>Select a project below:</p>
+<meta charset="UTF-8">
+<title>Sam Ouellette – Data Science Portfolio</title>
 
-    <ul>
-        <li><a href="nba_scheduling.html">NBA Scheduling Analysis</a></li>
-        <li><a href="https://github.com/samouellette/samouellette.github.io/blob/Portfolio/nba_scheduling.Rmd">NBA Scheudle Analysis Raw Code (Rmd)</a></li>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: #f4f6f8;
+        color: #222;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    p.subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .project-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .project-item {
+        background: white;
+        padding: 20px 25px;
+        margin: 15px 0;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .project-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
+
+    .project-item a {
+        text-decoration: none;
+        color: #0070f3;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .project-item a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Sam Ouellette</h1>
+    <p class="subtitle">Data Science Portfolio • R • Python • Analytics</p>
+
+    <ul class="project-list">
+
+        <!-- ✅ HTML REPORT (your real file) -->
+        <li class="project-item">
+            <a href="nba_scheduling.html" target="_blank">NBA Scheduling Analysis</a>
+            <div style="margin-top:6px; font-size:14px; color:#666;">
+                Forecasting, travel modeling, and win-probability analysis.
+            </div>
+        </li>
+
+        <!-- ✅ RAW RMD FILE (your real file) -->
+        <li class="project-item">
+            <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
+            <div style="margin-top:6px; font-size:14px; color:#666;">
+                Full R Markdown source including data prep, modeling, and visualization.
+            </div>
+        </li>
 
     </ul>
+</div>
 </body>
 </html>
+
