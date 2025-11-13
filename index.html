@@ -34,6 +34,15 @@
         margin-bottom: 40px;
     }
 
+    /* ✅ Added missing subtitle2 class */
+    p.subtitle2 {
+        text-align: center;
+        font-size: 20px;
+        color: #444;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+
     .project-list {
         list-style: none;
         padding: 0;
@@ -67,7 +76,7 @@
 </head>
 
 <body>
-    <body>
+
     <div style="text-align:center; margin-top:40px;">
         <img src="professional pic.png" alt="Sam Ouellette" 
              style="width:160px; height:160px; border-radius:50%; border:3px solid #ccc;">
@@ -75,12 +84,14 @@
 
 <div class="container">
     <h1>Sam Ouellette</h1>
+
+    <!-- This is now centered -->
     <p class="subtitle2">Senior Statistical Science & Data Analysis major at Temple University's Fox School of Business</p>
+
     <p class="subtitle">Data Science Portfolio • R • Python</p>
 
     <ul class="project-list">
 
-        <!-- ✅ HTML REPORT (your real file) -->
         <li class="project-item">
             <a href="nba_scheduling.html" target="_blank">NBA Scheduling Analysis</a>
             <div style="margin-top:6px; font-size:14px; color:#666;">
@@ -88,7 +99,6 @@
             </div>
         </li>
 
-        <!-- ✅ RAW RMD FILE (your real file) -->
         <li class="project-item">
             <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
             <div style="margin-top:6px; font-size:14px; color:#666;">
@@ -97,6 +107,11 @@
         </li>
 
     </ul>
+</div>
+
+</body>
+</html>
+
 </div>
 </body>
 </html>
