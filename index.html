@@ -16,19 +16,21 @@
     /* HERO BANNER */
     .hero {
         width: 100%;
-        padding: 80px 20px 100px 20px;
+        padding: 80px 20px 120px 20px;
         text-align: center;
-        background: linear-gradient(135deg, #4d9cff, #6f6bff, #9d5bff);
+        background: linear-gradient(135deg, #ff9444, #ff5e45, #ff3d3d);
         color: white;
-        box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
     .hero img {
         width: 160px;
         height: 160px;
         border-radius: 50%;
-        border: 4px solid rgba(255,255,255,0.9);
-        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        border: 4px solid rgba(255,255,255,0.95);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.22);
         margin-bottom: 25px;
     }
 
@@ -36,7 +38,7 @@
         font-size: 52px;
         font-weight: 700;
         margin-bottom: 15px;
-        letter-spacing: 0.4px;
+        letter-spacing: 0.5px;
     }
 
     .hero p {
@@ -45,34 +47,34 @@
     }
 
     .subtitle-main {
-        font-size: 21px;
-        color: rgba(255,255,255,0.95);
+        font-size: 20px;
+        color: rgba(255,255,255,0.96);
         max-width: 900px;
         margin-bottom: 10px;
     }
 
     .subtitle-career {
         font-size: 19px;
-        color: rgba(255,255,255,0.88);
+        color: rgba(255,255,255,0.9);
         margin-bottom: 16px;
         max-width: 900px;
     }
 
     .subtitle-tech {
         font-size: 18px;
-        color: rgba(255,255,255,0.8);
+        color: rgba(255,255,255,0.85);
         letter-spacing: 0.6px;
         margin-top: 10px;
     }
 
-    /* CONTENT AREA */
+    /* PAGE CONTENT BELOW HERO */
     .container {
         max-width: 900px;
-        margin: -40px auto 80px auto; /* Pull up slightly into hero for a smooth transition */
+        margin: 40px auto 80px auto; /* moved down so box is fully on white */
         padding: 0 20px;
     }
 
-    /* PROJECT SECTIONS */
+    /* PROJECT BOXES */
     .project-group {
         margin-bottom: 55px;
     }
@@ -151,12 +153,11 @@
     </div>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- WHITE CONTENT AREA -->
     <div class="container">
 
         <div class="project-group">
 
-            <!-- Main Project -->
             <div class="project-main">
                 <a href="nba_scheduling.html" target="_blank">
                     NBA Scheduling Analysis 
@@ -168,7 +169,6 @@
                 </div>
             </div>
 
-            <!-- Child Project -->
             <div class="project-child">
                 <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
                 <div class="project-desc">
