@@ -18,11 +18,9 @@
         width: 100%;
         padding: 80px 20px 120px 20px;
         text-align: center;
-        background: linear-gradient(135deg, #ff9444, #ff5e45, #ff3d3d);
+        background: linear-gradient(135deg, #ff8f4a, #ff6547, #ff3b3b);
         color: white;
         box-shadow: 0 8px 20px rgba(0,0,0,0.20);
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
     }
 
     .hero img {
@@ -37,8 +35,8 @@
     .hero h1 {
         font-size: 52px;
         font-weight: 700;
-        margin-bottom: 15px;
-        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+        letter-spacing: 0.4px;
     }
 
     .hero p {
@@ -46,39 +44,41 @@
         line-height: 1.5;
     }
 
+    /* The corrected sizing hierarchy */
     .subtitle-main {
-        font-size: 20px;
+        font-size: 22px;        /* middle size */
         color: rgba(255,255,255,0.96);
         max-width: 900px;
+        font-weight: 500;
         margin-bottom: 10px;
     }
 
     .subtitle-career {
         font-size: 19px;
-        color: rgba(255,255,255,0.9);
-        margin-bottom: 16px;
+        color: rgba(255,255,255,0.92);
         max-width: 900px;
+        margin-bottom: 14px;
     }
 
     .subtitle-tech {
         font-size: 18px;
         color: rgba(255,255,255,0.85);
         letter-spacing: 0.6px;
-        margin-top: 10px;
+        margin-top: 12px;
     }
 
-    /* PAGE CONTENT BELOW HERO */
+    /* WHITE CONTENT SECTION */
     .container {
         max-width: 900px;
-        margin: 40px auto 80px auto; /* moved down so box is fully on white */
+        margin: 50px auto 80px auto;
         padding: 0 20px;
     }
 
-    /* PROJECT BOXES */
     .project-group {
         margin-bottom: 55px;
     }
 
+    /* MAIN PROJECT BOX */
     .project-main {
         background: white;
         padding: 26px 32px;
@@ -106,6 +106,7 @@
         line-height: 1.5;
     }
 
+    /* CHILD PROJECT BOX */
     .project-child {
         background: #fafafa;
         padding: 20px 32px;
@@ -133,7 +134,7 @@
 
 <body>
 
-    <!-- HERO HEADER -->
+    <!-- HERO SECTION -->
     <div class="hero">
         <img src="professional pic.png" alt="Sam Ouellette">
 
@@ -152,12 +153,12 @@
         </p>
     </div>
 
-
-    <!-- WHITE CONTENT AREA -->
+    <!-- PROJECT SECTION -->
     <div class="container">
 
         <div class="project-group">
 
+            <!-- Main Project -->
             <div class="project-main">
                 <a href="nba_scheduling.html" target="_blank">
                     NBA Scheduling Analysis 
@@ -169,6 +170,7 @@
                 </div>
             </div>
 
+            <!-- Child Project -->
             <div class="project-child">
                 <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
                 <div class="project-desc">
@@ -182,5 +184,6 @@
 
 </body>
 </html>
+
 
 
