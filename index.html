@@ -13,53 +13,72 @@
         color: #222;
     }
 
-    .container {
-        max-width: 900px;
-        margin: 60px auto;
-        padding: 20px;
+    /* Header container */
+    .header {
+        max-width: 820px;
+        margin: 70px auto 40px auto;
+        text-align: center;
+        padding: 0 20px;
     }
 
-    h1 {
-        font-size: 42px;
-        margin-bottom: 10px;
-        text-align: center;
-        font-weight: 700;
-        color: #1a1a1a;
-    }
-
-    p.subtitle2 {
-        text-align: center;
-        font-size: 20px;
-        color: #444;
-        margin-top: -5px;
-        margin-bottom: 10px;
-    }
-
-    /* Updated, more professional career-interest line */
-    p.subtitle3 {
-        text-align: center;
-        font-size: 18px;
-        color: #555;
-        margin-top: 0px;
+    .header img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 3px solid #d3d3d3;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         margin-bottom: 25px;
     }
 
-    p.subtitle {
-        text-align: center;
-        font-size: 17px;
-        color: #555;
-        margin-bottom: 50px;
+    .header h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 12px;
+        letter-spacing: 0.3px;
     }
 
-    /* Project container */
+    .header p {
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    .subtitle-main {
+        font-size: 20px;
+        color: #444;
+        margin-bottom: 10px;
+    }
+
+    .subtitle-career {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 18px;
+        max-width: 680px;
+    }
+
+    .subtitle-tech {
+        font-size: 17px;
+        color: #666;
+        margin-top: 8px;
+        letter-spacing: 0.5px;
+    }
+
+    /* Page container */
+    .container {
+        max-width: 900px;
+        margin: 0 auto 80px auto;
+        padding: 0 20px;
+    }
+
+    /* Project structures */
     .project-group {
-        margin-bottom: 40px;
+        margin-bottom: 55px;
     }
 
     /* Main project box */
     .project-main {
         background: white;
-        padding: 22px 28px;
+        padding: 24px 30px;
         border-radius: 14px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.07);
         transition: 0.15s ease;
@@ -73,23 +92,23 @@
     .project-main a {
         text-decoration: none;
         color: #0070f3;
-        font-size: 23px;
+        font-size: 24px;
         font-weight: 600;
     }
 
     .project-desc {
-        margin-top: 6px;
+        margin-top: 8px;
         font-size: 15px;
         color: #666;
     }
 
-    /* Child / associated project box */
+    /* Child box (associated project) */
     .project-child {
         background: #fafafa;
-        padding: 18px 28px;
+        padding: 18px 30px;
         border-left: 4px solid #0070f3;
         border-radius: 10px;
-        margin-top: 12px;
+        margin-top: 14px;
         margin-left: 40px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.04);
         transition: 0.15s ease;
@@ -111,53 +130,54 @@
 
 <body>
 
-<div style="text-align:center; margin-top:40px;">
-    <img src="professional pic.png" alt="Sam Ouellette" 
-         style="width:160px; height:160px; border-radius:50%; border:3px solid #ccc;">
-</div>
+    <!-- HEADER -->
+    <div class="header">
+        <img src="professional pic.png" alt="Sam Ouellette">
 
-<div class="container">
+        <h1>Sam Ouellette</h1>
 
-    <h1>Sam Ouellette</h1>
+        <p class="subtitle-main">
+            Senior Statistical Science & Data Analysis major at Temple University's Fox School of Business
+        </p>
 
-    <p class="subtitle2">
-        Senior Statistical Science & Data Analysis major at Temple University's Fox School of Business
-    </p>
+        <p class="subtitle-career">
+            Interests in quantitative analytics with sports, supply chain optimization, and financial modeling
+        </p>
 
-    <p class="subtitle3">
-        Interests in quantitative analytics with sports, supply chain optimization, and financial modeling
-    </p>
+        <p class="subtitle-tech">
+            Data Science Portfolio • R • Python
+        </p>
+    </div>
 
-    <p class="subtitle">
-        Data Science Portfolio • R • Python
-    </p>
 
-    <!-- Project Group -->
-    <div class="project-group">
+    <!-- PROJECT SECTION -->
+    <div class="container">
 
-        <!-- Main Project Box -->
-        <div class="project-main">
-            <a href="nba_scheduling.html" target="_blank">
-                NBA Scheduling Analysis 
-                <span style="font-size:15px; color:#777;">(Fall 2025 • Senior Year)</span>
-            </a>
+        <div class="project-group">
 
-            <div class="project-desc">
-                Forecasting, travel modeling, and win-probability analysis.
+            <!-- Main Project -->
+            <div class="project-main">
+                <a href="nba_scheduling.html" target="_blank">
+                    NBA Scheduling Analysis 
+                    <span style="font-size:15px; color:#777;">(Fall 2025 • Senior Year)</span>
+                </a>
+
+                <div class="project-desc">
+                    Forecasting, travel modeling, and win-probability analysis.
+                </div>
             </div>
-        </div>
 
-        <!-- Associated Rmd Box -->
-        <div class="project-child">
-            <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
-            <div class="project-desc">
-                Full R Markdown source code for NBA scheduling analysis including data preparation, modeling, and visualization.
+            <!-- Linked Child Box -->
+            <div class="project-child">
+                <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
+                <div class="project-desc">
+                    Full R Markdown source code including data preparation, modeling, and visualization.
+                </div>
             </div>
+
         </div>
 
     </div>
-
-</div>
 
 </body>
 </html>
