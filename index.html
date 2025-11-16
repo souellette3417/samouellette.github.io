@@ -27,20 +27,28 @@
         color: #1a1a1a;
     }
 
-    p.subtitle {
-        text-align: center;
-        font-size: 18px;
-        color: #555;
-        margin-bottom: 40px;
-    }
-
-    /* ✅ Added missing subtitle2 class */
     p.subtitle2 {
         text-align: center;
         font-size: 20px;
         color: #444;
         margin-top: -5px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+    }
+
+    /* New interest subheader */
+    p.subtitle3 {
+        text-align: center;
+        font-size: 18px;
+        color: #555;
+        margin-top: -5px;
+        margin-bottom: 25px;
+    }
+
+    p.subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 40px;
     }
 
     .project-list {
@@ -72,6 +80,12 @@
     .project-item a:hover {
         text-decoration: underline;
     }
+
+    /* Indented child project (Rmd) */
+    .child-item {
+        margin-left: 30px;
+        background: #fafafa;
+    }
 </style>
 </head>
 
@@ -85,34 +99,42 @@
 <div class="container">
     <h1>Sam Ouellette</h1>
 
-    <!-- This is now centered -->
-    <p class="subtitle2">Senior Statistical Science & Data Analysis major at Temple University's Fox School of Business</p>
+    <p class="subtitle2">
+        Senior Statistical Science & Data Analysis major at Temple University's Fox School of Business
+    </p>
 
-    <p class="subtitle">Data Science Portfolio • R • Python</p>
+    <p class="subtitle3">
+        Pursuing a career in quantitative analytics including sports, supply chain, and finance
+    </p>
+
+    <p class="subtitle">
+        Data Science Portfolio • R • Python
+    </p>
 
     <ul class="project-list">
 
+        <!-- Main Project -->
         <li class="project-item">
-            <a href="nba_scheduling.html" target="_blank">NBA Scheduling Analysis</a>
+            <a href="nba_scheduling.html" target="_blank">
+                NBA Scheduling Analysis 
+                <span style="font-size:14px; color:#999;">(Fall 2025 • Senior Year)</span>
+            </a>
             <div style="margin-top:6px; font-size:14px; color:#666;">
                 Forecasting, travel modeling, and win-probability analysis.
             </div>
         </li>
 
-        <li class="project-item">
+        <!-- Child Project (Indented R Code) -->
+        <li class="project-item child-item">
             <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
             <div style="margin-top:6px; font-size:14px; color:#666;">
-                NBA Scheduling Project full R Markdown source code including data prep, modeling, and visualization.
+                Full R Markdown source code including data prep, modeling, and visualization.
             </div>
         </li>
 
     </ul>
 </div>
 
-</body>
-</html>
-
-</div>
 </body>
 </html>
 
