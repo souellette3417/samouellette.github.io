@@ -9,7 +9,7 @@
         margin: 0;
         padding: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background: #f4f6f8;
+        background: #f5f6f8;
         color: #222;
     }
 
@@ -32,71 +32,92 @@
         font-size: 20px;
         color: #444;
         margin-top: -5px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
-    /* New interest subheader */
+    /* Updated, more professional career-interest line */
     p.subtitle3 {
         text-align: center;
         font-size: 18px;
         color: #555;
-        margin-top: -5px;
+        margin-top: 0px;
         margin-bottom: 25px;
     }
 
     p.subtitle {
         text-align: center;
-        font-size: 18px;
+        font-size: 17px;
         color: #555;
+        margin-bottom: 50px;
+    }
+
+    /* Project container */
+    .project-group {
         margin-bottom: 40px;
     }
 
-    .project-list {
-        list-style: none;
-        padding: 0;
-    }
-
-    .project-item {
+    /* Main project box */
+    .project-main {
         background: white;
-        padding: 20px 25px;
-        margin: 15px 0;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        padding: 22px 28px;
+        border-radius: 14px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+        transition: 0.15s ease;
     }
 
-    .project-item:hover {
+    .project-main:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
 
-    .project-item a {
+    .project-main a {
         text-decoration: none;
         color: #0070f3;
-        font-size: 22px;
+        font-size: 23px;
         font-weight: 600;
     }
 
-    .project-item a:hover {
-        text-decoration: underline;
+    .project-desc {
+        margin-top: 6px;
+        font-size: 15px;
+        color: #666;
     }
 
-    /* Indented child project (Rmd) */
-    .child-item {
-        margin-left: 30px;
+    /* Child / associated project box */
+    .project-child {
         background: #fafafa;
+        padding: 18px 28px;
+        border-left: 4px solid #0070f3;
+        border-radius: 10px;
+        margin-top: 12px;
+        margin-left: 40px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.04);
+        transition: 0.15s ease;
+    }
+
+    .project-child:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+
+    .project-child a {
+        text-decoration: none;
+        color: #0366d6;
+        font-size: 20px;
+        font-weight: 600;
     }
 </style>
 </head>
 
 <body>
 
-    <div style="text-align:center; margin-top:40px;">
-        <img src="professional pic.png" alt="Sam Ouellette" 
-             style="width:160px; height:160px; border-radius:50%; border:3px solid #ccc;">
-    </div>
+<div style="text-align:center; margin-top:40px;">
+    <img src="professional pic.png" alt="Sam Ouellette" 
+         style="width:160px; height:160px; border-radius:50%; border:3px solid #ccc;">
+</div>
 
 <div class="container">
+
     <h1>Sam Ouellette</h1>
 
     <p class="subtitle2">
@@ -104,37 +125,41 @@
     </p>
 
     <p class="subtitle3">
-        Pursuing a career in quantitative analytics including sports, supply chain, and finance
+        Focused on quantitative analytics with interests in sports analytics, supply chain optimization, and financial modeling
     </p>
 
     <p class="subtitle">
         Data Science Portfolio • R • Python
     </p>
 
-    <ul class="project-list">
+    <!-- Project Group -->
+    <div class="project-group">
 
-        <!-- Main Project -->
-        <li class="project-item">
+        <!-- Main Project Box -->
+        <div class="project-main">
             <a href="nba_scheduling.html" target="_blank">
                 NBA Scheduling Analysis 
-                <span style="font-size:14px; color:#999;">(Fall 2025 • Senior Year)</span>
+                <span style="font-size:15px; color:#777;">(Fall 2025 • Senior Year)</span>
             </a>
-            <div style="margin-top:6px; font-size:14px; color:#666;">
+
+            <div class="project-desc">
                 Forecasting, travel modeling, and win-probability analysis.
             </div>
-        </li>
+        </div>
 
-        <!-- Child Project (Indented R Code) -->
-        <li class="project-item child-item">
+        <!-- Associated Rmd Box -->
+        <div class="project-child">
             <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
-            <div style="margin-top:6px; font-size:14px; color:#666;">
-                Full R Markdown source code including data prep, modeling, and visualization.
+            <div class="project-desc">
+                Full R Markdown source code including data preparation, modeling, and visualization.
             </div>
-        </li>
+        </div>
 
-    </ul>
+    </div>
+
 </div>
 
 </body>
 </html>
+
 
