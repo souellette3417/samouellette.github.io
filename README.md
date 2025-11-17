@@ -5,12 +5,12 @@ Each project highlights a different analytical skill set including statistical m
 
 ---
 
-## NFL Betting Market Analysis
-A historical analysis of NFL betting market behavior using game data from 1980 onward. This project explores how specific betting lines have performed over time and identifies patterns that may indicate inefficiencies in the market. Originally completed in Python; the codebase is no longer available due to archival loss, but the full presentation is available.
+## Portfolio Website
+This GitHub Pages site is built directly from the `index.html` file in this repository. It showcases selected analytics projects, visualizations, and professional materials across sports analytics, predictive modeling, and data storytelling.
 
 **Project Files**  
-- **[View Presentation (PDF)](presentation/nfl_betting_comp.pdf)**  
-- **[Download Presentation (PPTX)](presentation/nfl_betting_comp.pptx)**  
+- **[Live Website](https://samouellette.github.io)**  
+- `index.html` (source code for the site)
 
 ---
 
@@ -23,12 +23,12 @@ A complete exploration of how travel, rest, and schedule congestion impact team 
 
 ---
 
-## Portfolio Website
-This GitHub Pages site is built directly from the `index.html` file in this repository. It showcases selected analytics projects, visualizations, and professional materials.
+## NFL Betting Market Analysis
+A historical analysis of NFL betting market behavior using game data from 1980 onward. This project explores how specific betting lines have performed over time and identifies patterns that may indicate inefficiencies in the market. Originally completed in Python; the codebase is no longer available due to archival loss, but the full presentation is available.
 
 **Project Files**  
-- **[Live Website](https://samouellette.github.io)**  
-- `index.html` (source code for the site)
+- **[View Presentation (PDF)](presentation/nfl_betting_comp.pdf)**  
+- **[Download Presentation (PPTX)](presentation/nfl_betting_comp.pptx)**  
 
 ---
 
