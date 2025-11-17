@@ -39,14 +39,10 @@
         letter-spacing: 0.4px;
     }
 
-    .hero p {
-        margin: 6px auto;
-        line-height: 1.5;
-    }
+    .hero p { margin: 6px auto; line-height: 1.5; }
 
-    /* The corrected sizing hierarchy */
     .subtitle-main {
-        font-size: 22px;        /* middle size */
+        font-size: 22px;
         color: rgba(255,255,255,0.96);
         max-width: 1200px;
         font-weight: 500;
@@ -67,16 +63,14 @@
         margin-top: 12px;
     }
 
-    /* WHITE CONTENT SECTION */
+    /* CONTENT WRAPPER */
     .container {
         max-width: 900px;
         margin: 50px auto 80px auto;
         padding: 0 20px;
     }
 
-    .project-group {
-        margin-bottom: 55px;
-    }
+    .project-group { margin-bottom: 55px; }
 
     /* MAIN PROJECT BOX */
     .project-main {
@@ -158,23 +152,33 @@
 
         <div class="project-group">
 
-            <!-- Main Project -->
+            <!-- MAIN PROJECT -->
             <div class="project-main">
                 <a href="nba_scheduling.html" target="_blank">
                     NBA Scheduling Analysis 
                     <span style="font-size:15px; color:#777;">(Fall 2025 • Senior Year)</span>
                 </a>
-
                 <div class="project-desc">
                     Forecasting, travel modeling, and win-probability analysis.
                 </div>
             </div>
 
-            <!-- Child Project -->
+            <!-- CHILD PROJECT: Raw R Code -->
             <div class="project-child">
                 <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
                 <div class="project-desc">
                     Full R Markdown source code including data preparation, modeling, and visualization.
+                </div>
+            </div>
+
+            <!-- CHILD PROJECT: NFL BETTING MARKET ANALYSIS -->
+            <div class="project-child">
+                <a href="presentation/nfl_betting_comp.pdf" target="_blank">
+                    NFL Betting Market Analysis (PDF)
+                </a>
+                <div class="project-desc">
+                    Moneyline and point spread analysis using every NFL game since 1980 to evaluate market behavior 
+                    and identify long-term inefficiencies. Completed Fall 2024 (Junior Year).
                 </div>
             </div>
 
@@ -184,6 +188,7 @@
 
 </body>
 </html>
+
 
 
 
