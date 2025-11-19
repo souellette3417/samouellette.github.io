@@ -74,6 +74,16 @@
         margin-bottom: 55px;
     }
 
+    /* GRAY WRAPPER FOR GROUPED PROJECTS */
+    .project-wrapper {
+        background: #f0f1f3;
+        padding: 28px 32px;
+        border-radius: 22px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
     /* MAIN PROJECT BOX */
     .project-main {
         background: white;
@@ -110,7 +120,7 @@
         padding: 20px 32px;
         border-left: 4px solid #0070f3;
         border-radius: 12px;
-        margin-top: 8px;   /* visually connected to NBA block */
+        margin-top: 8px;
         margin-left: 42px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.06);
         transition: 0.15s ease;
@@ -128,7 +138,7 @@
         font-weight: 600;
     }
 
-    /* NFL Thumbnail */
+    /* Thumbnail (NFL icon) */
     .project-thumb {
         width: 48px;
         height: 48px;
@@ -163,28 +173,33 @@
 
     <!-- PROJECT SECTION -->
     <div class="container">
-
         <div class="project-group">
 
-            <!-- MAIN PROJECT: Temple Football Analytics -->
-<div class="project-main">
-    <a href="temple_football_analytics_prez.pdf" target="_blank">
-        Temple Football Analytics Presentation 
-        <span style="font-size:15px; color:#777;">(Fall 2025 • Senior Year)</span>
-    </a>
-    <div class="project-desc">
-        Data-driven EPA analysis of playcalling tendencies and optimal decision-making across game situations.
-    </div>
-</div>
-            <!-- CHILD PROJECT: Temple Football Raw R Code -->
-<div class="project-child">
-    <a href="temple_project_code_appendix.R" target="_blank">
-        View Raw R Code (Appendix)
-    </a>
-    <div class="project-desc">
-        Full R script used for data cleaning and EPA modeling.
-    </div>
-</div>
+            <!-- WRAPPED TEMPLE FOOTBALL SECTION -->
+            <div class="project-wrapper">
+
+                <!-- MAIN PROJECT: Temple Football Analytics -->
+                <div class="project-main">
+                    <a href="temple_football_analytics_prez.pdf" target="_blank">
+                        Temple Football Analytics Presentation
+                        <span style="font-size:15px; color:#777;">(Fall 2025 • Senior Year)</span>
+                    </a>
+                    <div class="project-desc">
+                        Data-driven EPA analysis of playcalling tendencies and optimal decision-making across game situations.
+                    </div>
+                </div>
+
+                <!-- CHILD PROJECT: Raw R Code -->
+                <div class="project-child">
+                    <a href="temple_project_code_appendix.R" target="_blank">
+                        View Raw R Code (Appendix)
+                    </a>
+                    <div class="project-desc">
+                        Full R script used for data cleaning and EPA modeling.
+                    </div>
+                </div>
+
+            </div> <!-- end project-wrapper -->
 
 
             <!-- MAIN PROJECT: NBA SCHEDULING -->
@@ -198,20 +213,22 @@
                 </div>
             </div>
 
-            <!-- CHILD PROJECT: Raw R Code -->
+            <!-- CHILD PROJECT: NBA Raw R Code -->
             <div class="project-child">
-                <a href="nba_scheduling.Rmd" target="_blank">View Raw R Code (Rmd)</a>
+                <a href="nba_scheduling.Rmd" target="_blank">
+                    View Raw R Code (Rmd)
+                </a>
                 <div class="project-desc">
                     Full R Markdown source code including data preparation, modeling, and visualization.
                 </div>
             </div>
 
-            <!-- MAIN PROJECT: NFL BETTING MARKET -->
+            <!-- MAIN PROJECT: NFL BETTING ANALYSIS -->
             <div class="project-main">
                 <img src="nfl_icon.png" alt="NFL icon" class="project-thumb">
 
                 <a href="presentation/nfl_betting_comp.pdf" target="_blank">
-                    NFL Betting Market Analysis 
+                    NFL Betting Market Analysis
                     <span style="font-size:15px; color:#777;">(Fall 2024 • Junior Year)</span>
                 </a>
                 <div class="project-desc">
@@ -220,10 +237,11 @@
             </div>
 
         </div>
-
     </div>
 
 </body>
+</html>
+
 </html>
 
 
